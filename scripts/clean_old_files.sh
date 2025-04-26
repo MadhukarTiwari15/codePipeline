@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Cleaning old xcv files..."
+echo "Cleaning old xsdfscv files..."
 echo "rm -rf /home/ubuntu/myapp/*"
