@@ -14,7 +14,11 @@ phases:
             - echo "we are in the build block"
             - echo "we will run some tests"
             - grep -Fq "Congratulations" index.html
+            - echo "ziping files or building"
+            - zip -r myapp.zip .
     post_build:
         commands:
             - echo "we are in the post build phase"
-            
+    artifacts:
+        files:
+            - myapp.zip
